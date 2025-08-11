@@ -16,6 +16,7 @@ A powerful MCP (Model Context Protocol) server that connects to Google Calendar 
 ---
 
 ## 📂 Folder Structure
+```bash
 MCP_Server/
 │
 ├── tools/
@@ -27,7 +28,7 @@ MCP_Server/
 ├── main.py # MCP server entry point
 ├── credential.json # Google OAuth credentials (DO NOT PUSH)
 ├── token.json # Google OAuth token (DO NOT PUSH)
-
+```
 
 ---
 
@@ -37,9 +38,11 @@ MCP_Server/
 ```bash
 git clone https://github.com/YOUR_USERNAME/mcp-server.git
 cd mcp-server
+```
 
+##Install UV & Create Virtual Environment
 
-
+```bash
 # Install UV if not already installed
 pip install uv
 
@@ -51,16 +54,15 @@ uv venv .venv
 .venv\Scripts\activate
 # On Mac/Linux:
 source .venv/bin/activate
-
-
-uv pip install -r requirements.txt
-
+```
 
 ##4️⃣ Set up Google API Credentials
-Go to Google Cloud Console
+Go to [Google Cloud Console](https://console.cloud.google.com/)
 
 Enable Gmail API and Google Calendar API
 
 Create OAuth 2.0 credentials and download the JSON file
 
 Save it as:
+`credential.json`
+`token.json`
