@@ -66,3 +66,52 @@ Create OAuth 2.0 credentials and download the JSON file
 Save it as:
 `credential.json`
 `token.json`
+⚠ DO NOT COMMIT THESE FILES TO GIT — they should be in `.gitignore`.
+
+## 🖥 Adding to Claude AI Desktop
+You can run this MCP server locally and connect it to **Claude AI Desktop**.
+
+1. **Install Claude Desktop**  
+   👉 [Download Claude for Desktop](https://claude.ai/download)
+
+2. Clone this repo inside your local workspace:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/mcp-server.git
+   cd mcp-server
+3. Run the MCP server:
+
+    ```bash
+   python main.py
+    ```
+Add MCP Server to Claude's Config
+Open (or create) Claude's config file:
+
+Windows: %APPDATA%\Claude\claude_desktop_config.json
+
+Mac: ~/Library/Application Support/Claude/claude_desktop_config.json
+
+Add your server details under "mcpServers":
+
+```bash
+{
+  "mcpServers": {
+    "emailMCP": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\ABSOLUTE\\PATH\\TO\\PARENT\\FOLDER\\mcp-server",
+        "run",
+        "main.py"
+      ]
+    }
+  }
+}
+```
+
+##RESTAR YOU PC
+
+
+---
+
+If you want, I can now **merge this Claude Desktop section** into the **full README.md** I wrote earlier so you have a single clean file ready to push to GitHub. That way, everything — cloning, setup, Google credentials, Claude config — is in one place.
+
