@@ -1,6 +1,6 @@
 # 📅 Sriram's MCP Calendar & Email Server 🤖  
 A powerful MCP (Model Context Protocol) server that connects to Google Calendar & Gmail APIs to let you:  
-- 📬 Read Emails  
+- 📬 Read and Write Emails  
 - 📅 Create, Delete, and List Meetings  
 - 📖 Fetch all meetings on a specific day  
 - ⚡ Integrate directly with Cloud Desktop
@@ -114,4 +114,5 @@ Add your server details under "mcpServers":
 ---
 
 If you want, I can now **merge this Claude Desktop section** into the **full README.md** I wrote earlier so you have a single clean file ready to push to GitHub. That way, everything — cloning, setup, Google credentials, Claude config — is in one place.
+
 
